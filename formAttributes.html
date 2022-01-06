@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Attributes</title>
+</head>
+
+<body>
+    <!-- Connect one form to another form -->
+    <form action="" id="parentform">
+        First Name: <input type="text" placeholder="firstname" name="firstname"><br><br>
+        Last Name : <input name="lastname" disabled type="text" placeholder="lastname disabled field"><br><br>
+        <input type="file" accept="audio/*,video/*,image/*"><br><br>
+        <input type="checkbox" name="check" checked>India
+        <input type="checkbox" name="check">Japan<br><br>
+        <!-- Link other Form -->
+        <input type="submit"><br><br>
+    </form><br><br>
+    <form action="" form="parentform">
+        <!--Use form id to link by tag attribute name form=""-->
+        School : <input type="text" placeholder="school name"><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloremque facilis accusamus aperiam
+            deleniti neque.</p>
+
+    </form>
+
+</body>
+
+</html>
